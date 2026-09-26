@@ -1,118 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Rabah | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Clean, readable modern font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Ahmad R</a>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <span class="logo">Ahmad Rabah</span>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Work & Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </header>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="ahmad.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm a student</h3>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+  <!-- Hero Section -->
+  <section id="about" class="hero section-padding">
+    <div class="container">
+      <p class="eyebrow">Welcome to my portfolio</p>
+      <h1 class="headline">Building data-driven strategy and business solutions.</h1>
+      <p class="bio">
+        Passionate professional dedicated to solving complex operational challenges, uncovering actionable insights, and driving organizational impact through data and strategic execution.
+      </p>
+      <div class="cta-group">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#projects" class="btn btn-secondary">View Work</a>
+      </div>
     </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
+  <!-- Projects / Experience Section -->
+  <section id="projects" class="section-padding section-alt">
+    <div class="container">
+      <h2 class="section-title">Selected Work & Impact</h2>
+      <div class="grid">
+        
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-tag">Analytics & Strategy</span>
+            <h3>Strategic Growth & Optimization</h3>
+          </div>
+          <p class="card-description">
+            Analyzed key performance indicators and built cross-functional operational frameworks to drive sustained business growth and decision-making efficiency.
+          </p>
+          <div class="skills-chips">
+            <span>SQL</span>
+            <span>Tableau</span>
+            <span>Business Operations</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-tag">Data Visualization</span>
+            <h3>Performance Monitoring Dashboard</h3>
+          </div>
+          <p class="card-description">
+            Designed interactive executive dashboards to track vital service metrics, streamline reporting workflows, and surface high-priority anomalies in real time.
+          </p>
+          <div class="skills-chips">
+            <span>Power BI</span>
+            <span>Excel</span>
+            <span>Data Modeling</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-header">
+            <span class="card-tag">Operations</span>
+            <h3>Workflow & Process Automation</h3>
+          </div>
+          <p class="card-description">
+            Structured standard operating procedures and integrated automation tools to eliminate manual reporting redundancies and enhance stakeholder communications.
+          </p>
+          <div class="skills-chips">
+            <span>Automation</span>
+            <span>Process Design</span>
+            <span>Stakeholder Management</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Data & Analytics</h3>
+          <ul>
+            <li>SQL & Relational Databases</li>
+            <li>Tableau & Power BI</li>
+            <li>Advanced Excel Modeling</li>
+            <li>Snowflake</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Strategy & Execution</h3>
+          <ul>
+            <li>Business Operations</li>
+            <li>Go-To-Market (GTM) Strategy</li>
+            <li>Performance Measurement</li>
+            <li>Cross-Functional Leadership</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Workflows</h3>
+          <ul>
+            <li>Salesforce & CRM</li>
+            <li>Figma & Jira</li>
+            <li>Prompt Engineering & AI Workflows</li>
+            <li>Quantitative Research</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding section-alt text-center">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">
+        I am always interested in discussing new opportunities, collaborations, and data-driven initiatives.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:your-email@example.com" class="btn btn-primary">Email Me</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn Profile</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Ahmad Rabah. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
